@@ -8,25 +8,25 @@
  *  |  | 24 Shift
  *  |  | 23 Gnd
  *  |  | 22 Reset (+)
- *  |  | 21 Reset (-)
+ *  |  | 21 Reset (-) -| Gnd
  *  |  | 20 Rpt (+)
- *  |  | 19 Rpt (-)
- *  |  | 18 R9
+ *  |  | 19 Rpt (-) -| Gnd
+ *  |  | 18 R9 -10k- Vcc
  *  |  | 17 C0
- *  |  | 16 R8
- *  |  | 15 R7
+ *  |  | 16 R8 -10k- Vcc
+ *  |  | 15 R7 -10k- Vcc
  *  |  | 14 C1
  *  |  | 13 C2
- *  |  | 12 R6
+ *  |  | 12 R6 -10k- Vcc
  *  |  | 11 C3
- *  |  | 10 R5
- *  |  |  9 R4
- *  |  |  8 R3
- *  |  |  7 R2
- *  |  |  6 R1
- *  |  |  5 R0
- *  |  |  4 Bulb
- *  |  |  3 Cntrl
+ *  |  | 10 R5 -10k- Vcc
+ *  |  |  9 R4 -10k- Vcc
+ *  |  |  8 R3 -10k- Vcc
+ *  |  |  7 R2 -10k- Vcc
+ *  |  |  6 R1 -10k- Vcc
+ *  |  |  5 R0 -10k- Vcc
+ *  |  |  4 Bulb (!assorbe 120mA!)
+ *  |  |  3 Ctrl
  *  |  |  2 C4
  *  |  |  1 NC
  *  +--+
@@ -36,8 +36,8 @@
  *         +---| |----+ 
  *    +5v  | 1     12 | Data 0
  * Strobe  | 2     11 | Data 1
- *  Reset  | 3     10 | Data 2
- *   Bulb  | 4      9 | Data 3 
+ * !Reset  | 3     10 | Data 2
+ *  !Bulb  | 4      9 | Data 3 
  * Data 6  | 5      8 | Data 4 
  *    Gnd  | 6      7 | Data 5 
  *         +----------+ 
